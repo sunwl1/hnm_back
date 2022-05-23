@@ -12,5 +12,6 @@ app.use(cors())
 const PORT = 5000;
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server run`)
+    console.log(`Server run` + process.env.PORT)
+    console.log(`Server run` + PORT)
 })
